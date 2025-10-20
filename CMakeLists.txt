@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.18)
 
 project(lab2_zal)
 
 add_library(Lab2 INTERFACE)
 target_include_directories(Lab2 INTERFACE include)
 set_target_properties(Lab2 PROPERTIES
-    INTERFACE_COMPILE_FEATURES cxx_std_17
+    INTERFACE_COMPILE_FEATURES cxx_std_23
 )
 
 add_executable(zad1 "test.cpp" "zad1.cpp")
